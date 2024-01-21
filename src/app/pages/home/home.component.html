@@ -1,0 +1,15 @@
+<div class="__margin-top __margin-bottom">
+  This page displays the 3 latest books, sorted by newest first (okay, so there are only 3 books available in the LOTR series, but if there was more it would filter latest 3 by release date, and only show those, as you can see in the code)
+</div>
+
+<form>
+  <label for="searchText">Search for book by name: </label>
+  <input class="__margin-bottom" id="searchText" type="text" [formControl]="searchText" />
+  <button type="submit" class="__margin-bottom" (click)="search()">Search</button> <button class="__margin-bottom" (click)="clearSearch()">Clear</button>
+</form>
+
+<div>
+  <div *ngFor="let book of filteredBooks; index as index">
+    {{ index + 1 }} - {{ book.name }} - {{ book.releaseDate.format('YYYY') }}
+  </div>
+</div>

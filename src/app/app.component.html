@@ -1,30 +1,21 @@
-<h1>Angular Router Sample</h1>
+<h1>Nemo's fantastic LOTR book store!</h1>
 <nav>
   <a class="button"
-     routerLink="/crisis-list"
+     routerLink="/home"
      routerLinkActive="activebutton"
      ariaCurrentWhenActive="page">
-    Crisis Center
-  </a> |
+    Home
+  </a>
   <a class="button"
-     routerLink="/heroes-list"
+     routerLink="/books"
      routerLinkActive="activebutton"
      ariaCurrentWhenActive="page">
-    Heroes
+    Books
   </a>
 </nav>
 <router-outlet></router-outlet>
 
 <div style="display: none;">
-<!-- This HTML represents the initial state for the tutorial. It is not intended to appear in the app. -->
-<app-crisis-list></app-crisis-list>
-<app-heroes-list></app-heroes-list>
-
-<!-- This HTML snippet is for when the user first adds the routerlink navigation. -->
-<nav>
-  <a class="button" routerLink="/crisis-list">Crisis Center</a> |
-  <a class="button" routerLink="/heroes-list">Heroes</a>
-</nav>
-
-
+<app-home></app-home>
+<app-books></app-books>
 </div>

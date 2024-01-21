@@ -1,7 +1,7 @@
 {
-  "name": "angular.io-example",
+  "name": "books",
   "version": "0.0.0",
-  "description": "Example project from an angular.io guide.",
+  "description": "Nemo's fantastic books project",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "17.0.8",
     "@angular/router": "17.0.8",
     "angular-in-memory-web-api": "~0.16.0",
+    "moment": "^2.30.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.0"

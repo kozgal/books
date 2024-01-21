@@ -1,0 +1,14 @@
+<div class="__margin-top __margin-bottom">
+  This page loads and shows all available books (there's only 3 books from LOTR series, so showing the same books more than once to meet requirement of 10 books for this challenge)
+</div>
+
+<div class="__margin-top __margin-bottom">
+  Click a book to see details about it
+</div>
+
+<div>
+  <div *ngFor="let book of allBooks; index as index"
+       (click)="goToDetails(book)">
+    {{ index + 1 }} - {{ book.name }} - {{ book.releaseDate.format('YYYY') }}
+  </div>
+</div>

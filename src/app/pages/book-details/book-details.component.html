@@ -1,0 +1,16 @@
+<div class="__margin-top __margin-bottom">
+  This page displays the details of book with ID {{ bookId }}, you can go back to overview using menu button or browser history back.
+</div>
+
+<div *ngIf="bookDetails">
+  <div class="__margin-bottom">
+    Chapters in {{ bookDetails?.name }}:
+  </div>
+  <div *ngFor="let chapter of bookChapters; index as index">
+    {{ index + 1 }} - {{ chapter.chapterName }}
+  </div>
+</div>
+
+<div class="__margin-top">
+  <button (click)="back()">Back to all books</button>
+</div>
